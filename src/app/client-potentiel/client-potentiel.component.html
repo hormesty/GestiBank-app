@@ -1,0 +1,61 @@
+<div class="offset-4 col-4">
+    <form #cpForm="ngForm" (ngSubmit)="onFormSubmit(cpForm)" class="form-group">
+        <div class="card border-primary rounded-0">
+
+            <div class="card-header p-0">
+                <div class="bg-info text-white text-center py-2">
+                    <h3>Formulaire de demande d'inscription</h3>
+                </div>
+            </div>
+            <div class="card-body p-3">
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="Nom" ngModel name="CpNom" id="CpNom">
+                        <input class="form-control" placeholder="Prenom" ngModel name="CpPrenom" id="CpPrenom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2 ">
+                        <div class="input-group-prepend ">
+                            <div class="input-group-text"><i class="fa fa-home text-info"></i></div>
+                            <input class="form-control col-12" placeholder="Adresse" ngModel name="CpAdresse" id="CpAdresse">
+                        </div> <input class="form-control" placeholder="Code Postal" ngModel name="CpCp" id="CpCp">
+                        <input class="form-control" placeholder="Ville" ngModel name="CpVille" id="CpVille">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="Email" ngModel name="CpEmail" id="CpEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="Numéro de téléphone" ngModel name="CpTel" id="CpTel">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-calendar text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="Revenu mensuel" ngModel name="CpRevenu" id="CpRevenu">
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-info" type="submit">Transmettre la demande</button>
+        </div>
+        <div class="alert alert-success" *ngIf="clientPotentiel.message">
+            <span>{{clientPotentiel.message}}</span>
+        </div>
+    </form>
+</div>
