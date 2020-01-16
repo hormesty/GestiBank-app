@@ -1,0 +1,31 @@
+
+<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <table class="table table-secondary">
+        <thead>
+    
+            <tr>
+                <th>Numero de demande</th>
+                <th>Date de demande</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <!-- <th>Conseiller</th> -->
+            </tr>
+    
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of clientPotentiel">
+                <td>{{c.num_demande}}</td>
+                <td>{{c.date_demande}}</td>
+                <td>{{c.nom}}</td>
+                <td>{{c.prenom}}</td>
+                <td><label for="track">Choisir un Conseiller</label><select class ="custom-select" name="conseiller" id="conseiller"><option value="Fabien">VEGNE Fabien</option><option value="Valentine">OLLIVIER Valentine</option><option value="Nourou">CISSE Nourou</option></select></td>
+                <button (click)="gotodetail(c.mat_conseiller)" class="btn btn-info">Affecter la demande</button>
+                <!-- <button (click)="gotoupdate(c.mat_conseiller)" class="btn btn-success">Mettre à jour</button>
+               <button (click)="gotodetail(c.mat_conseiller)" class="btn btn-info">Mettre à jour</button> --> 
+                <!-- <button type="button" class="btn btn-danger">Supprimer</button> --> 
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+

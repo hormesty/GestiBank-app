@@ -1,0 +1,44 @@
+<div class="tab-pane fade  show active " id="profil"    role="tabpanel" aria-labelledby="home-tab">
+    <table class="table table-secondary">
+        <thead>
+
+            <tr>
+                <th>mat_conseiller</th>
+                <!-- <th>id_utilisateur</th> -->
+                <!-- <th>id_admin</th> -->
+                <!-- <th>datedebut</th> -->
+                <!-- <th>datefin</th> -->
+                <th>nom</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of conseillers">
+                <td>{{c.mat_conseiller}}</td>
+                <!-- <td>{{c.id_utilisateur}}</td> -->
+                <!-- <td>{{c.id_admin}}</td> -->
+                <!-- <td>{{c.datedebut}}</td> -->
+                <!-- <td>{{c.datefin}}</td> -->
+                <td>{{c.nom}}</td>
+                <button (click)="gotodetail(c.mat_conseiller)" class="btn btn-info">Consulter</button>
+                <button (click)="gotoupdate(c.mat_conseiller)"  type="button" class="btn btn-success">Mettre à jour</button>
+                <!-- <button type="button" class="btn btn-danger">Supprimer</button> -->
+
+            </tr>
+        </tbody>
+    </table>
+
+<div>
+<button (click)="gotonew()" class="btn btn-info">Ajouter un conseiller</button>
+</div>
+
+
+
+<div class="row">
+<div class="col">
+<router-outlet></router-outlet>
+</div>
+</div>
+
+
+</div>

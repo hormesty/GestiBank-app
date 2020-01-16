@@ -1,0 +1,70 @@
+<div class="offset-2 col-8">
+    <form #cForm="ngForm" (ngSubmit)="onFormSubmit(cForm)" class="form-group">
+        <div class="card border-primary rounded-0">
+            
+            <div class="card-header p-0">
+                <div class="bg-info text-white text-center py-2">
+                    <h3>Modification des informations du conseiller {{conseiller.mat_conseiller}} </h3>
+                </div>
+            </div>
+            <div class="card-body p-3">
+                <!--Body-->
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="{{conseiller.nom}}" ngModel name="CName" id="CName" >
+                        <input class="form-control" placeholder="{{conseiller.prenom}}" ngModel name="CPrenom" id="CPrenom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2 ">
+                        <div class="input-group-prepend ">
+                            <div class="input-group-text"><i class="fa fa-home text-info"></i></div>
+                            <input class="form-control col-12" placeholder="{{conseiller.adresse}}" ngModel name="CAdresse" id="CAdresse">
+                        </div>                        <input class="form-control" placeholder="{{conseiller.cp}}" ngModel name="CCp" id="CCp">
+                        <input class="form-control" placeholder="{{conseiller.ville}}" ngModel name="CVille" id="CVille">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="{{conseiller.email}}" ngModel name="CEmail" id="CEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="{{conseiller.telephone}}" ngModel name="CTel" id="CTel">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-key text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="{{conseiller.pseudo}}" ngModel name="CPseudo" id="CPseudo">
+                        <input class="form-control" placeholder="{{conseiller.mdp}}" ngModel name="CMdp" id="CMdp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-calendar text-info"></i></div>
+                        </div>
+                        <input class="form-control" placeholder="{{conseiller.datedebut}}" disabled>
+                        <input class="form-control" placeholder="{{conseiller.datefin}}" ngModel name="CDateFin" id="CDateFin">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-info" type="submit">Modifier</button>
+        </div>
+    </form></div>
+
+
+
