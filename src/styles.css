@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vw;
+}
+
+
+/* Navbar */
+
+#logo {
+    width: 80px;
+}
+
+#connexion {
+    color: #086ed2;
+}
+
+.alert {
+    background-color: #e8aa33;
+}
+
+
+/* Third content */
+
+.third_content {
+    margin-top: 20px;
+    width: 100vw;
+}
+
+#inside_third_content span {
+    font-size: 80px;
+    display: inline;
+}
+
+.third_content img {
+    width: 299.93px;
+    height: 430px;
+}
+
+#inside_third_content {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+#image1_tc_inside {
+    background-color: #f2f2f2;
+    height: 115px;
+}
+
+#image1_tc_inside h1 {
+    font-size: 30px;
+}
+
+#image2_tc_inside {
+    height: 115px;
+    background-color: #0c2b77;
+}
+
+#image2_tc_inside h3 {
+    font-size: 25px;
+}
+
+#image3_tc_inside {
+    height: 115px;
+    width: 299.93px;
+}
+
+
+/* FIN third content */
+
+
+/*FIN Navbar */
+
+
+/* second_content */
+
+#second_content {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+#gold {
+    background-color: #e8aa33;
+}
+
+#gold img {
+    width: 20px;
+    height: 20px;
+}
+
+#second_content button {
+    margin-left: 2px;
+    padding: 6px;
+}
+
+
+/* Fin second_content */
+
+
+/* footer */
+
+footer {
+    background-color: #6c757d;
+    height: 227px;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+}
+
+.inside_footer {
+    width: 1120px;
+}
+
+#copyright {
+    background-color: #a3a3a3;
+    width: 100vw;
+}
+
+
+/* Fin footer */
